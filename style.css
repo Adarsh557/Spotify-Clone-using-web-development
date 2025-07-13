@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto
+}
+body{
+    background-color: #121212;
+    color: white; 
+}
+.left{
+    width:25vw;
+}
+.right{
+    width: 75vw;
+
+
+}
+.home ul li{
+    display:flex;
+    width: 27px;
+    height: 27px;
+    list-style: none;
+    gap: 18px;
+    padding:10px 10px 10px 10px;
+    margin-top: 2px;
+    background-color: #121212;
+    border-radius: 30px;
+    margin-bottom: 2px;
+    
+    
+}
+.home ul{
+    margin:1px;
+    display: grid;
+    gap: 5px;
+    padding-inline-start: 0px;
+}
+.icon_name{
+    margin-block-end: 0.5em;   
+}
+.bg-black{
+    color:white;
+    background-color: #121212;
+}
+.invert{
+    filter: invert(1);
+}
+.home{
+    padding: 30px;
+}
+.bg-grey{
+    background-color: rgb(31 31 31);
+}
+.p1{
+    padding: 30px;
+    padding-top: 10px;
+    min-height: 50vh;
+}  
+.library{
+    display: flex;
+    gap: 5px;
+    align-items: start;
+}
+
+.lib-icon{
+    justify-content: center;
+    gap:5px;
+    font-size: 15px;
+}
+.footer{
+    display: flex;
+    margin:10px;
+    font-size: 10px;
+    gap: 16px;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+.footer a{
+    color: grey;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.header > *{
+    margin: 10px;
+}
+.trending_songs{
+    padding: 20px;
+    height: auto;
+
+}
+.popular_artists{
+    
+    padding: 20px;
+}
+.card_container{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 25px;
+}
+
+.card{
+    width: 200px;
+    height:270px;
+    display: block;
+    border:solid transparent 2px;
+    padding: 10px;
+    background-color: #252525;
+    border-radius: 10px;
+    position: relative;
+    
+}
+.card img{
+    width:100%;
+    object-fit: contain;
+    border: solid transparent 0px;
+    border-radius: 10px;
+}
+.card h4{
+    margin: 4px 0 0 0;
+    font-size: 16px;
+}
+.card p{
+    margin: 2px 0 8px 0;
+    font-size: 14px;
+    white-space: nowrap;         /* Prevent text from wrapping */
+    overflow: hidden;            /* Hide overflow */
+    text-overflow: ellipsis;     /* Add "..." at the end */
+
+}
+.play img{
+    width: 40px;
+    height: 40px;
+    background-color: #1fd164;
+    fill: #000;
+    margin: 1px;
+    border: solid transparent 0px;
+    border-radius: 60px;
+}
+.play{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 160px;
+    right: 20px;
+    opacity: 0;
+    transition: all 0.1s ease-out;
+}
